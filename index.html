@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 노코드와 바이브코딩 - 초등학생을 위한 가이드</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1122px; /* A4 가로 사이즈 (297mm) */
+            height: 794px; /* A4 세로 사이즈 (210mm) */
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .main-title {
+            font-size: 2.5em;
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #718096;
+            margin-bottom: 20px;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            height: calc(100% - 150px);
+        }
+        
+        .section {
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            border-radius: 15px;
+            padding: 25px;
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section.nocode {
+            border-color: #48bb78;
+        }
+        
+        .section.lowcode {
+            border-color: #4299e1;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .icon {
+            font-size: 2.5em;
+            margin-right: 15px;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #2d3748;
+        }
+        
+        .description {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #38b2ac;
+        }
+        
+        .examples {
+            margin-top: 15px;
+        }
+        
+        .example-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .example-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .example-list li {
+            padding: 5px 0;
+            color: #4a5568;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .example-list li::before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+        }
+        
+        .ai-trend {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            grid-column: 1 / -1;
+        }
+        
+        .ai-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .ai-description {
+            font-size: 1.1em;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+        
+        .decorative-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        
+        .decorative-elements::before {
+            content: "🎨";
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2em;
+            opacity: 0.3;
+        }
+        
+        .decorative-elements::after {
+            content: "💻";
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+            font-size: 2em;
+            opacity: 0.3;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                width: 297mm;
+                height: 210mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="decorative-elements"></div>
+        
+        <div class="header">
+            <h1 class="main-title">🚀 노코드 & 바이브코딩</h1>
+            <p class="subtitle">초등학생도 쉽게 이해하는 프로그래밍의 미래!</p>
+        </div>
+        
+        <div class="content-grid">
+            <div class="section nocode">
+                <div class="section-header">
+                    <span class="icon">🎯</span>
+                    <h2 class="section-title">노코드</h2>
+                </div>
+                
+                <p class="description">
+                    <strong>노코드</strong>는 마치 레고 블록을 조립하듯이 프로그램을 만드는 방법이에요! 
+                    복잡한 코딩 언어를 배우지 않아도 마우스 클릭만으로 앱이나 웹사이트를 만들 수 있어요.
+                </p>
+                
+                <div class="highlight">
+                    🎮 <strong>예시:</strong> 스크래치에서 블록을 드래그해서 게임 만들기!
+                </div>
+                
+                <div class="examples">
+                    <p class="example-title">📱 노코드로 만들 수 있는 것들:</p>
+                    <ul class="example-list">
+                        <li>나만의 앱 만들기</li>
+                        <li>온라인 상점 만들기</li>
+                        <li>블로그나 홈페이지 만들기</li>
+                        <li>간단한 게임 만들기</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section lowcode">
+                <div class="section-header">
+                    <span class="icon">⚡</span>
+                    <h2 class="section-title">바이브코딩</h2>
+                </div>
+                
+                <p class="description">
+                    <strong>바이브코딩</strong>은 AI에게 말로 설명하면 진짜 웹사이트를 만들어주는 신기한 방법이에요! 
+                    마치 마법사에게 소원을 말하면 마법으로 뚝딱 만들어주는 것 같아요.
+                </p>
+                
+                <div class="highlight">
+                    🪄 <strong>예시:</strong> v0에게 "고양이 사진 갤러리 만들어줘"라고 하면 실제 웹사이트 완성!
+                </div>
+                
+                <div class="examples">
+                    <p class="example-title">🌟 바이브코딩으로 할 수 있는 것들:</p>
+                    <ul class="example-list">
+                        <li>프롬프트만으로 웹사이트 제작</li>
+                        <li>말로 설명하면 바로 배포</li>
+                        <li>디자인부터 기능까지 자동 완성</li>
+                        <li>수정도 말로 간단하게!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ai-trend">
+            <h3 class="ai-title">🤖 AI와 함께하는 미래의 프로그래밍</h3>
+            <p class="ai-description">
+                요즘은 ChatGPT 같은 AI가 도와줘서 프로그래밍이 더욱 쉬워졌어요! 
+                AI에게 "게임을 만들고 싶어"라고 말하면 코드를 자동으로 만들어줘요. 
+                미래에는 누구나 쉽게 프로그래머가 될 수 있을 거예요! 🌟
+            </p>
+        </div>
+    </div>
+</body>
+</html> 
